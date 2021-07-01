@@ -6,14 +6,21 @@
     padding-right: 2px;
     border-radius: 3px;
 }
-pre {
-    break-inside: avoid;
-}
-h1 {
-    page-break-before: always;
+@media only print {
+    pre {
+        break-inside: avoid;
+    }
+    h1 {
+        page-break-before: always;
+    }
 }
 @media only screen and (min-width: 1000px) {
     body {
         width: 60vw;
+    }
+}
+@media only screen and (min-width: 1750px) {
+    body {
+        width: 45vw;
     }
 }
